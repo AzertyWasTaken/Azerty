@@ -6,26 +6,56 @@
     <meta charset="UTF-8">
     <title>Number - Mathpedia</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="equation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script src="binary.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Number</h1>
+    <h1>Number</h1>
     </header>
 
     <nav>
-        <div class="links">
-            <a href="index.html">Home</a>
-            <a href="summary.html">Summary</a>
-        </div>
+    <div class="links">
+    <a href="index.html">Home</a>
+    <a href="summary.html">Summary</a>
+    </div>
 
-        <form onsubmit="search(event)">
-            <input type="text" placeholder="Search..." class="search-bar" id="searchInput">
-        </form>
+    <form onsubmit="search(event)">
+    <input type="text" placeholder="Search..." class="search-bar" id="searchInput">
+    </form>
     </nav>
 
     <main>
-        <p>Numbers are abstract entities used to express quantities, sort items or measure lengths.</p>
+    <h2>Definition</h2>
+    <p>Numbers are abstract entities used to express quantities, sort items or measure lengths.</p>
+    <p>They are the basis of mathematics and come in several types, each with its specific properties and uses.</p>
+
+    <h2>Whole numbers</h2>
+    <p>Whole numbers, also called <strong>integers</strong>, are numbers used to count.</p>
+    <p>$...,-3,-2,-1,0,1,2,3,...$</p>
+
+    <p>Integers above 0 are called <strong>positive</strong> numbers while integers below 0 are called <strong>negative</strong> numbers.</p>
+    <p>0 is the only number that is neither positive or negative.</p>
+
+    <h2>Rational numbers</h2>
+    <p>Rational numbers are fractions $a/b$ where $a$ and $b$ are nonzero integers.</p>
+
+    <h2>Operations</h2>
+    <p>An operation is a process that take two numbers or more and return a single number.</p>
+    <p>An operation is <strong>commutative</strong> if changing the order of numbers do not alter the result.</p>
+
+    <h2>Notation</h2>
+    <p>Numbers are expressed by using <strong>numeral systems</strong>.</p>
+    <p>Numeral systems in a base $n$ use $n$ digits.</p>
+    <p>Numbers represented in base 2 are called <strong>binary</strong> numbers.</p>
+
+    <h2>Convert to binary</h2>
+    <input type="text" id="number" placeholder="Enter an integer">
+    <button onclick="check()">Check</button>
+    <p id="result">---</p>
     </main>
 </body>
 

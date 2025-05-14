@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #101820;
+  background-color: #202020;
   color: #FFFFFF;
   padding: 20px;
 }
@@ -12,13 +12,21 @@ header {
   text-align: center;
 }
 
+input {
+    padding: 4px 4px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
 button {
-    padding: 10px 20px;
+    padding: 4px 16px;
     font-size: 16px;
     background-color: #40B050;
     color: #FFFFFF;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -27,7 +35,7 @@ button:hover {
 }
 
 nav {
-  background-color: #304050;
+  background-color: #404040;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -45,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #405060;
+  background-color: #505050;
 }
 
 nav .links {
@@ -79,4 +87,48 @@ nav .links a {
 #pageList a:hover {
   text-decoration: none;
   color: #FF8000;
+}
+
+#pageList a:visited {
+  text-decoration: none;
+  color: #FF4040;
+}
+
+pre {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+pre[class*="language-"] {
+  background-color: #000000 !important;
+}
+
+code {
+  font-family: Consolas, monospace;
+  color: #FFFFFF;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 2px solid #808080;
+  padding: 8px;
+  text-align: center;
+  background-color: #101010;
+}
+
+th {
+  background-color: #404040;
+}
+
+h2 {
+  border-bottom: 2px solid #404040;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
 }

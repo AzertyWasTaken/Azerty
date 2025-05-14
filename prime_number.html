@@ -6,27 +6,53 @@
     <meta charset="UTF-8">
     <title>Prime Number - Mathpedia</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="equation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script src="prime.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Prime Number</h1>
+    <h1>Prime Number</h1>
     </header>
 
     <nav>
         <div class="links">
-            <a href="index.html">Home</a>
-            <a href="summary.html">Summary</a>
-        </div>
+    <a href="index.html">Home</a>
+    <a href="summary.html">Summary</a>
+    </div>
 
-        <form onsubmit="search(event)">
-            <input type="text" placeholder="Search..." class="search-bar" id="searchInput">
-        </form>
+    <form onsubmit="search(event)">
+    <input type="text" placeholder="Search..." class="search-bar" id="searchInput">
+    </form>
     </nav>
 
     <main>
-        <p>Prime numbers are numbers with exactly 2 divisors.</p>
-        <p>The 10 smallest prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29.</p>
+    <h2>Definition</h2>
+    <p>Prime numbers are integers that have exactly 2 divisors.</p>
+
+    <h2>First terms</h2>
+    <p>$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...$</p>
+
+    <h3>Properties</h3>
+    <p>2 is the only even prime numbers.</p>
+    <p>2 and 3 are the only consecutive prime numbers.</p>
+    <p>Prime numbers tend to get rarer and rarer the higher the numbers get.</p>
+    
+    <h2>Growth rate</h2>
+    <p>The growth rate may be $n\times log(n)$.</p>
+
+    <h2>Composite numbers</h2>
+    <p><strong>Composite</strong> numbers are integers with more than 2 divisors.</p>
+
+    <h3>First terms</h3>
+    <p>$4, 6, 8, 9, 10, 12, 14, 15, 16, 18, ...$</p>
+
+    <h2>Number primality check</h2>
+    <input type="text" id="number" placeholder="Enter an integer">
+    <button onclick="check()">Check</button>
+    <p id="result">---</p>
     </main>
 </body>
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Exponent sequence - Mathpedia</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Mathjax -->
+    <script src="equation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <!-- Dark theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+    <!-- Line numerotation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+
+    <!-- Prism.js core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+    <!-- Tools -->
+    <script src="exponent.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>Exponent sequence</h1>
+    </header>
+
+    <nav>
+    <div class="links">
+    <a href="index.html">Home</a>
+    <a href="summary.html">Summary</a>
+    </div>
+    </nav>
+
+    <main>
+    <h2>Definition</h2>
+    <p>An exponent sequence is a sequence where each term equal the number of the term exponentiated by a fixed number called the power.</p>
+
+    <h2>Square sequence</h2>
+    <p>The square sequence is a sequence where each term equal the number of the term exponentiated by 2.</p>
+
+    <h3>First terms</h3>
+    <p>$1, 4, 9, 16, 25, 36, 49, 64, 81, 100, ...$</p>
+
+    <h2>Cubic sequence</h2>
+    <p>The cubic sequence is a sequence where each term equal the number of the term exponentiated by 3.</p>
+
+    <h3>First terms</h3>
+    <p>$1, 8, 27, 64, 125, 256, 343, 512, 729, 1024, ...$</p>
+
+    <h2>Python Code</h2>
+    <p>Time complexity: $O(nk)$</p>
+    <pre class="line-numbers"><code class="language-python">def exponent(n,k):
+    return n**k
+    # Use exponentiation "**" to calculate the number</code></pre>
+
+    <h2>Tool</h2>
+    <p>Return the $n$th term of the $k$th sequence: $n^k$.</p>
+    <input type="text" id="number" placeholder="Enter an integer">
+    <input type="text" id="number2" placeholder="Enter an integer">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result">---</p>
+    </main>
+</body>
+
+</html>
